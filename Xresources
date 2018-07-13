@@ -1,0 +1,7 @@
+*VT100*foreground: gray90
+*VT100*background: gray10
+
+*VT100*faceName: Roboto Mono:style=Regular:size=9:antialias=true
+
+XTerm*termName: xterm-256color
+XTerm*dynamicColors: true
