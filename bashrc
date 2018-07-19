@@ -14,3 +14,6 @@ alias python=python3
 
 # Fix caps lock
 setxkbmap -layout us -option ctrl:nocaps
+
+# NVM stuff
+source /usr/share/nvm/init-nvm.sh

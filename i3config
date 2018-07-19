@@ -157,3 +157,12 @@ bar {
 
 # Start nm-applet
 exec --no-startup-id nm-applet
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+# Assign monitors
+workspace 1 output LVDS1
+workspace 2 output VGA1
