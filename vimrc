@@ -1,13 +1,13 @@
 set number
 
-let g:airline_powerline_fonts=1
-let g:airline_theme = 'base16_ashes'
-
 syntax on
-colorscheme slate
+colorscheme desert
 
 imap jk <esc>
-nmap ; :w<cr>
+"nmap ; :w<cr>
+
+let g:airline_powerline_fonts=1
+let g:airline_theme='base16_eighties'
 
 set tabstop=2 shiftwidth=2 expandtab
 
