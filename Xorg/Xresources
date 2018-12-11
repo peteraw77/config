@@ -1,0 +1,18 @@
+*VT100*foreground: gray90
+*VT100*background: gray10
+
+!!*VT100*faceName: Roboto Mono:style=Regular:size=9:antialias=true
+
+Xcursor.size: 16
+
+XTerm*termName: xterm-256color
+XTerm*dynamicColors: true
+
+urxvt*termName: rxvt-unicode
+urxvt*scrollBar: false
+urxvt*font: xft:Noto Sans Mono:style=Regular:size=9:antialias=true
+urxvt*letterSpace: 0
+urxvt*saveLines: 5000
+
+urxvt*background: gray15
+urxvt*foreground: gray85

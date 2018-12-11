@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 #PS1='\u@\h \W\$ '
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1='\[\033[01;38;5;75m\]\u\[\033[00;38;5;253m\]@\[\033[01;38;5;75m\]\h\[\033[00;38;5;253m\]:\[\033[00;38;5;75m\]\w\[\033[00;38;5;253m\]\$ '
 
 # Use python3 by default
 alias python=python3
@@ -20,3 +20,7 @@ source /usr/share/nvm/init-nvm.sh
 
 # Add ruby shit to path
 export PATH=$PATH:/home/snake/.gem/ruby/2.5.0/bin/
+
+# Android shit
+export ANDROID_HOME=/opt/android-sdk/
+
