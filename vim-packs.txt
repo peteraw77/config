@@ -1,0 +1,5 @@
+auto-pairs
+vim-airline-themes
+vim-airline
+vim-colorschemes
+youcompleteme
