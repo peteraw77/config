@@ -3,3 +3,4 @@ vim-airline-themes
 vim-airline
 vim-colorschemes
 youcompleteme
+vim-fugitive
