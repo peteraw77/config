@@ -57,8 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    PS1='\[\033[01;38;5;75m\]\u\[\033[00;38;5;253m\]@\[\033[01;38;5;75m\]\h\[\033[00;38;5;253m\]:\[\033[00;38;5;75m\]\w\[\033[00;38;5;253m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -72,6 +71,9 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# Just force this
+PS1='\[\033[01;38;5;75m\]\u\[\033[00;38;5;253m\]@\[\033[01;38;5;75m\]\h\[\033[00;38;5;253m\]:\[\033[00;38;5;75m\]\w\[\033[00;38;5;253m\]\$ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -90,6 +92,17 @@ fi
 
 # Fix caps lock
 setxkbmap -layout us -option ctrl:nocaps
+
+# openFOAM business
+source /opt/openfoam6/etc/bashrc
+
+# Android business
+export PATH=$PATH:~/Projects/surveillance/bin
+export PATH=$PATH:/opt/android-studio/bin
+export PATH=$PATH:~/Android/Sdk/platform-tools
+
+# Set python to the right version
+alias python=python3
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -119,3 +132,16 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias ic="ibmcloud"
+
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/snake/Projects/google-cloud-sdk/path.bash.inc' ]; then . '/home/snake/Projects/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/snake/Projects/google-cloud-sdk/completion.bash.inc' ]; then . '/home/snake/Projects/google-cloud-sdk/completion.bash.inc'; fi
