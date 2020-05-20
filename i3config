@@ -184,6 +184,9 @@ bar {
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
+# Use compositing
+exec picom -CG &
+
 # Set background image
 exec --no-startup-id nitrogen --restore
 
