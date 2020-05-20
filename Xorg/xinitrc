@@ -47,7 +47,3 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
-
-exec xss-lock -- i3lock -i ~/Media/pictures/planets_fun.jpg -t &
-exec redshift -l 43.6532:-79.3832 &
-exec i3
