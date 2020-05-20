@@ -185,10 +185,18 @@ bar {
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Use compositing
-exec picom -CG &
+exec --no-startup-id picom -CG
+
+# Fix caps lock
+exec setxkbmap -layout us -option ctrl:nocaps
 
 # Set background image
 exec --no-startup-id nitrogen --restore
 
 # Autostart redshift with custom coordinates
 exec --no-startup-id redshift -l 44.2312:-76.4860
+
+# Start work correspondence applications
+# for some reason XFCE forces Telegram to autostart
+#exec Telegram -startintray
+exec slack -u
