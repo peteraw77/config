@@ -9,3 +9,6 @@ cp i3config ~/.config/i3/config
 echo 'Copying Xorg config'
 cp Xorg/Xresources ~/.Xresources
 cp Xorg/xinitrc ~/.xinitrc
+
+echo 'Screen tearing fix'
+sudo cp 20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
