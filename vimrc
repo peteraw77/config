@@ -1,10 +1,18 @@
+set nocompatible
+
 set number
+set hidden
+set hlsearch
+set incsearch
+set noswapfile
 
 syntax on
 colorscheme 256-grayvim
 
 imap jk <esc>
 nmap ; :pc<cr>
+nmap [ :bp<cr>
+nmap ] :bn<cr>
 "nmap ; :w<cr>
 
 let g:airline_powerline_fonts=1
